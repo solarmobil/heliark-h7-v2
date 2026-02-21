@@ -1,0 +1,466 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "Frame 32.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea6_1",
+            "X": 367,
+            "Y": 246,
+            "Width": 49,
+            "Height": 14,
+            "TextId": "__SingleUse_45TO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_KKX3",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 158,
+            "Y": 92,
+            "Width": 165,
+            "Height": 64,
+            "TextId": "__SingleUse_C61E",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_IKUA",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "ImageProgress",
+            "Name": "imageProgress1",
+            "X": 146,
+            "Y": 60,
+            "Width": 189,
+            "Height": 26,
+            "FileNameProgress": "Group 138.png",
+            "AnchorAtZero": true,
+            "Direction": "Right",
+            "FileNameBackground": "Group 139.png",
+            "IndicatorPositionWidth": 300,
+            "IndicatorPositionHeight": 28,
+            "ProgressRangeMax": 1017,
+            "ProgressRangeSteps": 1017,
+            "ProgressRangeStepsMin": 1
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 192,
+            "Y": 39,
+            "Width": 48,
+            "Height": 14,
+            "TextId": "__SingleUse_8LOE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 125,
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_VP86",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "ImageProgress",
+            "Name": "imageProgress2",
+            "X": 11,
+            "Y": 53,
+            "Width": 24,
+            "Height": 79,
+            "FileNameProgress": "Group 140.png",
+            "AnchorAtZero": true,
+            "Direction": "Up",
+            "FileNameBackground": "Group 141.png",
+            "IndicatorPositionWidth": 303,
+            "IndicatorPositionHeight": 78,
+            "ProgressRangeMax": 100
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea4",
+            "X": 41,
+            "Y": 62,
+            "Width": 50,
+            "Height": 14,
+            "TextId": "__SingleUse_NAY3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_E6YV",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 6,
+            "Y": 191,
+            "Width": 58,
+            "Height": 58,
+            "RelativeFilename": "batterydash.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5",
+            "X": 103,
+            "Y": 210,
+            "Width": 55,
+            "Height": 14,
+            "TextId": "__SingleUse_WNJJ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_W7BP",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5_1",
+            "X": 64,
+            "Y": 246,
+            "Width": 55,
+            "Height": 14,
+            "TextId": "__SingleUse_1Y4S",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_Y2H0",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5_1_1",
+            "X": 410,
+            "Y": 62,
+            "Width": 55,
+            "Height": 14,
+            "TextId": "__SingleUse_SVIR",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_6PVO",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea6",
+            "X": 62,
+            "Y": 177,
+            "Width": 49,
+            "Height": 14,
+            "TextId": "__SingleUse_9WIS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_VZFF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image4",
+            "X": 430,
+            "Y": 196,
+            "Width": 44,
+            "Height": 44,
+            "RelativeFilename": "motoricon.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea7",
+            "X": 367,
+            "Y": 177,
+            "Width": 49,
+            "Height": 14,
+            "TextId": "__SingleUse_F21J",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_EMI3",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea7_1",
+            "X": 323,
+            "Y": 210,
+            "Width": 55,
+            "Height": 14,
+            "TextId": "__SingleUse_K3QU",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OHN6",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea8",
+            "X": 216,
+            "Y": 231,
+            "Width": 58,
+            "Height": 14,
+            "TextId": "__SingleUse_YZNN",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_S1VH",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea8_1",
+            "X": 206,
+            "Y": 250,
+            "Width": 78,
+            "Height": 14,
+            "TextId": "__SingleUse_JKGY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_SP4D",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea9",
+            "X": 42,
+            "Y": 19,
+            "Width": 28,
+            "Height": 14,
+            "TextId": "__SingleUse_LL4X",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_IAEH",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea9_1",
+            "X": 72,
+            "Y": 19,
+            "Width": 28,
+            "Height": 14,
+            "TextId": "__SingleUse_NM3B",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_NBGR",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea9_1_1",
+            "X": 102,
+            "Y": 19,
+            "Width": 24,
+            "Height": 14,
+            "TextId": "__SingleUse_Q79V",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_VLAW",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea10",
+            "X": 222,
+            "Y": 191,
+            "Width": 36,
+            "Height": 14,
+            "TextId": "__SingleUse_7BGZ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_RFV6",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "act_dashboard",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H750 Value line",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../STM32H750B-DK.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.25.0",
+  "CreatedBy": "4.25.0"
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.25.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_6PVO" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_SVIR" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;°C</Translation>
+      </Text>
+      <Text Id="__SingleUse_Y2H0" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_1Y4S" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;°C</Translation>
+      </Text>
+      <Text Id="__SingleUse_RFV6" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_7BGZ" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_VLAW" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q79V" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_NBGR" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_NM3B" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;:</Translation>
+      </Text>
+      <Text Id="__SingleUse_IAEH" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">00</Translation>
+      </Text>
+      <Text Id="__SingleUse_LL4X" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;:</Translation>
+      </Text>
+      <Text Id="__SingleUse_KKX3" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_45TO" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_SP4D" Alignment="Left" TypographyId="Typography_04">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_JKGY" Alignment="Left" TypographyId="Typography_04">
+        <Translation Language="GB">&lt;value&gt; kmph</Translation>
+      </Text>
+      <Text Id="__SingleUse_S1VH" Alignment="Left" TypographyId="Typography_04">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_YZNN" Alignment="Left" TypographyId="Typography_04">
+        <Translation Language="GB">&lt;value&gt; km</Translation>
+      </Text>
+      <Text Id="__SingleUse_OHN6" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_K3QU" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;°C</Translation>
+      </Text>
+      <Text Id="__SingleUse_EMI3" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_F21J" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;A</Translation>
+      </Text>
+      <Text Id="__SingleUse_VZFF" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_9WIS" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_W7BP" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_WNJJ" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;°C</Translation>
+      </Text>
+      <Text Id="__SingleUse_E6YV" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_NAY3" Alignment="Left" TypographyId="Typography_03">
+        <Translation Language="GB">&lt;value&gt;%</Translation>
+      </Text>
+      <Text Id="__SingleUse_VP86" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">0000</Translation>
+      </Text>
+      <Text Id="__SingleUse_8LOE" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_IKUA" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_C61E" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="TacticSansExd-Med.otf" Size="64" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="0123456789" WildcardCharacterRanges="0x00-0x7E" />
+    <Typography Id="Typography_01" Font="TacticSansExd-Med.otf" Size="14" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x00-0x7E" />
+    <Typography Id="Typography_02" Font="TacticSansExd-Med.otf" Size="8" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x00-0x7E" />
+    <Typography Id="Typography_03" Font="TacticSansExd-Med.otf" Size="14" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x00-0x7E" />
+    <Typography Id="Typography_04" Font="TacticSansExd-Med.otf" Size="12" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x00-0x7E" />
+  </Typographies>
+</TextDatabase>
