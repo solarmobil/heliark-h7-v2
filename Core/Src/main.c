@@ -944,7 +944,6 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	  taskENTER_CRITICAL();
 	      d->rpm=RxData1[0] | (RxData1[1] << 8);
 	 	  d->battery1.voltage=RxData1[2];
 	 	  d->battery1.temp1=RxData1[3];
@@ -954,7 +953,6 @@ void StartDefaultTask(void *argument)
 	 	  d->motor.temp=RxData1[9];
 	 	  d->motor.voltage=RxData1[2];
 	 	  d->motor.cont_temp=RxData1[8];
-	 	 taskEXIT_CRITICAL();
 	 	 osMutexAcquire(gpsmutexHandle, osWaitForever);
 	 	 	 	 d->system.time[0]=gGpsData.time[0];
 	 	 	 	 d->system.time[1]=gGpsData.time[1];
@@ -962,7 +960,7 @@ void StartDefaultTask(void *argument)
 	 	 	 	 d->system.time[3]=gGpsData.time[3];
 	 	 	     d->system.time[4]=gGpsData.time[4];
 	 	 	     d->system.time[5]=gGpsData.time[5];
-	 	 	   d->system.gps_speed=(uint8_t)(atof(gGpsData.speed)*1.852);
+	 	 	   d->system.gps_speed=(uint8_t)(atoi(gGpsData.speed)*1.852);
 	 	 	     osMutexRelease(gpsmutexHandle);
 	 	  if (osMessageQueueGetSpace(myQueue01Handle)>0)
 	 	  	  						{
@@ -980,7 +978,7 @@ void StartDefaultTask(void *argument)
 	 	 	 	  	  	   {
 	 	 	 	  	  	    //Error_Handler();
 	 	 	 	  	  	   }
-    osDelay(200);
+    osDelay(10);
   }
   /* USER CODE END 5 */
 }
@@ -996,18 +994,18 @@ void StartTask04(void *argument)
 {
   /* USER CODE BEGIN StartTask04 */
 
-	taskENTER_CRITICAL();
+	osKernelLock();
 	  GPS_Init();
 	  GPS_Setup3Hz();
-	  taskEXIT_CRITICAL();
+	  osKernelUnlock();
   /* Infinite loop */
   for(;;)
   {
-	  taskENTER_CRITICAL();
+	  //taskENTER_CRITICAL();
 	  GPS_Task();
 
 	  GPS_GetData(&gGpsData);
-	  taskEXIT_CRITICAL();
+
 
 
     osDelay(100);
