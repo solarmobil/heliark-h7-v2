@@ -61,7 +61,7 @@ typedef struct {
 } battery_t;
 
 typedef struct {
-    uint8_t current;
+    uint16_t current;
     uint8_t temp;
     uint8_t voltage;
     uint8_t cont_temp;
@@ -78,14 +78,13 @@ typedef struct {
 } system_t;
 
 typedef struct {
-    uint8_t rpm;
+    uint16_t rpm;
     battery_t battery1;
     uint8_t soc;
     motor_t motor;
     target_t target;
     system_t system;
 } dashboard_t;
-extern char clean_time[16];
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

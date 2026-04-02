@@ -14,11 +14,11 @@ void Model::tick()
 	            	{
 	            		if(osMessageQueueGet(myQueue01Handle,&r,0,0)==osOK)
 	            				{
-	            float speed=0.088972*(r->rpm);
-	            int sp=int(speed);
+	            //float speed=((r->rpm)*0.088972);
+	            //int sp=int(speed);
 
 				modelListener->rpm(r->rpm);
-				modelListener->speed(sp);
+				modelListener->speed(r->rpm);
 				modelListener->soc(r->soc);
 				modelListener->battery1(r->battery1);
 				modelListener->motor(r->motor);

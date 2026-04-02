@@ -22,7 +22,7 @@
 #include "cmsis_os.h"
 #include "libjpeg.h"
 #include "app_touchgfx.h"
-#include <stdint.h>
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -76,7 +76,7 @@ osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
   .stack_size = 1024 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityAboveNormal,
 };
 /* Definitions for GUITask */
 osThreadId_t GUITaskHandle;
@@ -90,7 +90,7 @@ osThreadId_t myTask04Handle;
 const osThreadAttr_t myTask04_attributes = {
   .name = "myTask04",
   .stack_size = 1024 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+  .priority = (osPriority_t) osPriorityAboveNormal,
 };
 /* Definitions for myQueue01 */
 osMessageQueueId_t myQueue01Handle;
@@ -106,7 +106,7 @@ const osMutexAttr_t gpsmutex_attributes = {
 dashboard_t *d;
 void myprintf(const char *fmt, ...);
 gps_t gGpsData;
-char clean_time[16];
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -470,7 +470,7 @@ static void MX_FDCAN1_Init(void)
   hfdcan1.Init.RxFifo1ElmtsNbr = 0;
   hfdcan1.Init.RxFifo1ElmtSize = FDCAN_DATA_BYTES_8;
   hfdcan1.Init.RxBuffersNbr = 0;
-  hfdcan1.Init.RxBufferSize = FDCAN_DATA_BYTES_8;
+  hfdcan1.Init.RxBufferSize = FDCAN_DATA_BYTES_16;
   hfdcan1.Init.TxEventsNbr = 0;
   hfdcan1.Init.TxBuffersNbr = 0;
   hfdcan1.Init.TxFifoQueueElmtsNbr = 1;
@@ -939,20 +939,21 @@ static void MX_GPIO_Init(void)
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
-  /* USER CODE BEGIN 5 */
-	//int count=0;
-  /* Infinite loop */
+
+  /* nfinite loop */
   for(;;)
   {
-	      d->rpm=RxData1[0] | (RxData1[1] << 8);
+	     // d->rpm=(RxData1[0] | (RxData1[1] << 8));
 	 	  d->battery1.voltage=RxData1[2];
 	 	  d->battery1.temp1=RxData1[3];
 	 	  d->battery1.temp2=RxData1[4];
-	 	  d->soc=RxData1[5];
+	 	  d->soc=RxData1[5]=RxData1[5];;
 	 	  d->motor.current=RxData1[6] | (RxData1[7] << 8);
-	 	  d->motor.temp=RxData1[9];
+	 	  d->motor.temp=RxData1[8];
 	 	  d->motor.voltage=RxData1[2];
-	 	  d->motor.cont_temp=RxData1[8];
+	 	  d->motor.cont_temp=RxData1[9];
+
+
 	 	 osMutexAcquire(gpsmutexHandle, osWaitForever);
 	 	 	 	 d->system.time[0]=gGpsData.time[0];
 	 	 	 	 d->system.time[1]=gGpsData.time[1];
@@ -960,25 +961,55 @@ void StartDefaultTask(void *argument)
 	 	 	 	 d->system.time[3]=gGpsData.time[3];
 	 	 	     d->system.time[4]=gGpsData.time[4];
 	 	 	     d->system.time[5]=gGpsData.time[5];
-	 	 	   d->system.gps_speed=(uint8_t)(atoi(gGpsData.speed)*1.852);
+	 	 	     d->system.gps_speed=(uint8_t)(atoi(gGpsData.speed)*1.852);
+	 	 	d->rpm=(uint8_t)(atoi(gGpsData.speed)*1.852);
 	 	 	     osMutexRelease(gpsmutexHandle);
 	 	  if (osMessageQueueGetSpace(myQueue01Handle)>0)
 	 	  	  						{
 	 	  	  						   osMessageQueuePut(myQueue01Handle,&d, 0,0);
 	 	  	  						}
-        TxData1[0]=d->system.gps_speed;
-        TxData1[1]=0;
-        TxData1[2]=0;
-		TxData1[3]=0;
-		TxData1[4]=0;
-		TxData1[5]=0;
-		TxData1[6]=0;
-		TxData1[7]=0;
+
+	 	TxData1[0] = (gGpsData.lat[0] - '0')*10+(gGpsData.lat[1] - '0');
+
+	 	TxData1[1] = (gGpsData.lat[2] - '0')*10+(gGpsData.lat[3] - '0');
+
+	 	TxData1[2] = (gGpsData.lat[5] - '0');
+
+	 	TxData1[3] = (gGpsData.lat[6] - '0');
+
+	 	TxData1[4] = (gGpsData.lat[7] - '0');
+
+	 	TxData1[5] = (gGpsData.lat[8] - '0');
+
+	 	TxData1[6] = 0;
+
+	 	TxData1[7] = (gGpsData.lon[0] - '0')*100+(gGpsData.lon[1] - '0')*10+(gGpsData.lon[2] - '0');
+
+	    TxData1[8] = (gGpsData.lat[3] - '0');
+
+	    TxData1[9] = (gGpsData.lat[4] - '0');
+
+	    TxData1[10] =(gGpsData.lat[6] - '0');
+
+	    TxData1[11] =(gGpsData.lat[7] - '0');
+
+	    TxData1[12] =(gGpsData.lat[8] - '0');
+
+	    TxData1[13] =(gGpsData.lat[9] - '0');
+
+	    TxData1[14] = 0;
+
+	    TxData1[15] = 0;
+
+
+
 	 	 	 if (HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &TxHeader1, TxData1)!= HAL_OK)
 	 	 	 	  	  	   {
-	 	 	 	  	  	    //Error_Handler();
+
 	 	 	 	  	  	   }
-    osDelay(10);
+	 	 	 	  	  	    //Error_Handler();
+
+    osDelay(400);
   }
   /* USER CODE END 5 */
 }
@@ -1023,7 +1054,7 @@ void MPU_Config(void)
   /* Disables the MPU */
   HAL_MPU_Disable();
 
-  /** Initializes and conbhfigures the Region and the memory to be protected
+  /** Initializes and configures the Region and the memory to be protected
   */
   MPU_InitStruct.Enable = MPU_REGION_ENABLE;
   MPU_InitStruct.Number = MPU_REGION_NUMBER0;
